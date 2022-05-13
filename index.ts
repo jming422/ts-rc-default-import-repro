@@ -1,8 +1,8 @@
-import snakecaseKeys from "snakecase-keys";
+import { default as snake } from "snakecase-keys";
 
 export async function main() {
   const foo = { fizzBuzz: "bar" };
-  const snaked = snakecaseKeys(foo);
+  const snaked = snake(foo);
   console.log(
     `orig: ${JSON.stringify(foo)}, snaked: ${JSON.stringify(snaked)}`
   );
